@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* variables */
+:root {
+--green-color: #7acc2d;
+--white-color: white;
+--black-color: #313337;
+--space: 10px;
+--shadow: 0 0 4px 2px #7f7f7fbf;
+}
+/* variables */
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+nav ul {
+  display: inherit;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav a {
+  color:var(--black-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--white-color);
+}
+
+/* -----------------------main*/
+
+.main-section {
+  font-size: 1.5vw;
+  align-self: center;
+  padding: 15%;
+  width: 50%;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/trazado1.png");
+  height: 235px;
+  background-size: cover;
+  background-position: center top;
+  padding: var(--space);
+}
+
+.product {
+  padding: 10px;
+  /* margin-top: -250px; */
+  position: relative;
+  top: -20vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  padding: 15px;
+  width: 250px;
+  box-shadow: var(--shadow);
+}
+
+.content img {
+  align-self: center;
+}
+
+.main_button {
+  background-color: var(--green-color);
+  width: 80%;
+  align-self: center;
+  padding: 10px;
+  border: none;
+  color: var(--white-color);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #558b22;
+}
